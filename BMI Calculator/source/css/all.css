@@ -1,0 +1,384 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  font-size: 32px;
+}
+
+.h2 {
+  font-size: 28px;
+}
+
+.h3 {
+  font-size: 24px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+.h4 {
+  font-size: 18px;
+}
+
+.h5 {
+  font-size: 16px;
+}
+
+.h6 {
+  font-size: 12px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+header {
+  background-color: #424242;
+}
+
+header .block {
+  width: 33%;
+}
+
+header .header-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+
+header .header-frame h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header-frame h1 a {
+  width: 117px;
+  height: 117px;
+  display: block;
+  background: url(../images/BMICLogo.png) no-repeat center;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header .header-frame form {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFD366;
+  outline: none;
+  width: 250px;
+}
+
+header .header-frame form label {
+  padding-bottom: 5px;
+}
+
+header .header-frame form input[type=text] {
+  outline: none;
+  border: solid 2px #FFD366;
+  background-color: #424242;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+header .header-frame form .body-height {
+  margin-bottom: 20px;
+}
+
+header .header-frame .button-check {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #FFD366;
+  border: none;
+  color: #424242;
+  cursor: pointer;
+}
+
+header .header-frame .button-check:hover {
+  -webkit-box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+          box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+}
+
+header .header-frame .button-check:active {
+  background-color: #DEA921;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .header-frame .bmi-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  color: #FF982D;
+}
+
+header .header-frame .bmi-show .show-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 123px;
+  height: 123px;
+  margin-right: 18px;
+  text-align: center;
+  border: solid 6px #FF982D;
+  border-radius: 50%;
+}
+
+header .header-frame .bmi-show .show-circle .circle-title {
+  font-size: 14px;
+}
+
+header .header-frame .bmi-show .show-circle .circle-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: solid 3px #424242;
+  border-radius: 50%;
+  background-color: #FF982D;
+  background-image: url("../images/icons_loop.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+header .header-frame .disappear {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .header .header-frame {
+    padding: 20px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header-frame h1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .header-frame .button-warp {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .header-frame .button-check {
+    width: 100px;
+    height: 100px;
+  }
+  .header .header-frame .bmi-show {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header-frame .bmi-show .show-category {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .header-frame .bmi-show .show-circle {
+    margin: 0;
+  }
+  .header .header-frame .bmi-show .show-category {
+    margin-top: 10px;
+  }
+}
+
+.listarea {
+  background-color: #eee;
+}
+
+.listarea .list-title {
+  text-align: center;
+  padding: 50px 0 40px 0;
+}
+
+.listarea .bmilist-warp {
+  padding-bottom: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.listarea .bmi-list {
+  padding: 0;
+}
+
+.listarea .bmi-data {
+  width: 625px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  padding: 20px 0;
+  border-left: #86D73F solid 5px;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.29);
+          box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.29);
+  background-color: white;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.listarea .bmidata-warp, .listarea .bmidata-category, .listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height, .listarea .bmidata-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.listarea .bmidata-warp {
+  width: 60%;
+}
+
+.listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height {
+  margin-right: 42px;
+  width: 20%;
+}
+
+.listarea .bmidata-category {
+  margin-left: 12px;
+  width: 20%;
+}
+
+.listarea .bmidata-date {
+  margin: 0 10px;
+}
+
+.listarea .bmidatm-m {
+  margin-right: 7px;
+}
+
+@media (max-width: 991.98px) {
+  .listarea .bmi-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    border-top: #86D73F solid 5px;
+  }
+  .listarea .bmi-data .bmidata-category {
+    width: 100%;
+  }
+  .listarea .bmi-data .bmidata-warp {
+    width: 100%;
+  }
+  .listarea .bmidata-warp, .listarea .bmidata-category, .listarea .bmidata-date {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px 0;
+  }
+  .listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .listarea .bmi-data {
+    width: 250px;
+  }
+  .listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .listarea .bmidatm-m {
+    margin-right: 0px;
+  }
+}
+
+footer {
+  background-color: #FFD366;
+  text-align: center;
+}
+
+footer img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 55px;
+  height: 55px;
+}
+/*# sourceMappingURL=all.css.map */

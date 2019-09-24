@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI Calculator</title>
+  <meta name='description' content="BMI Calculator" />
+  <meta property="og:title" content="BMI Calculator" />
+  <meta property="og:description" content="BMI Calculator">
+  <meta property="og:type" content="website"/>
+  <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-frame">
+      <h1 class="block"><a class="homeicon" href="">圖片區域</a></h1>
+      <form class="block h4">
+        <label for="body-height">身高 cm</label>
+        <input class="body-height h3" id="body-height" type="text" placeholder="請輸入身高"
+          oninput="value=value.replace(/[^\d]/g,'')">
+        <label for="body-weight">體重 kg</label>
+        <input class="body-weight h3" id="body-weight" type="text" placeholder="請輸入體重"
+          oninput="value=value.replace(/[^\d]/g,'')">
+      </form>
+      <div class="button-warp block">
+        <input id="button-check" class="button-check h3" type="button" value="看結果">
+        <div id="bmi-show" class="bmi-show disappear">
+          <div class="show-circle">
+            <div class="circle-value h1">20.09</div>
+            <div class="circle-title">BMI</div>
+            <div id="circle-icon" class="circle-icon"></div>
+          </div>
+          <div class="show-category h1">理想</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="listarea">
+    <div class="list-title h3">BMI 紀錄</div>
+    <div class="bmilist-warp">
+      <ul class="bmi-list">
+        <li class="bmi-data">
+          <div class="bmidata-category h4">理想</div>
+          <div class="bmidata-warp">
+            <div class="bmidata-result">
+              <div class="h6 bmidatm-m">BMI</div>
+              <div class="h4">20.90</div>
+            </div>
+            <div class="bmidata-weight">
+              <div class="h6 bmidatm-m">weight</div>
+              <div class="h4">70kg</div>
+            </div>
+            <div class="bmidata-height">
+              <div class="h6 bmidatm-m">height</div>
+              <div class="h4">180cm</div>
+            </div>
+          </div>
+          <div class="bmidata-date">
+            <div class="h6">06-19-2019</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="images/BMICLogo-black.png" alt="">
+  </footer>
+
+  <script src="js/all.js"></script>
+</body>
+
+</html>
