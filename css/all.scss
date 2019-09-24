@@ -32,9 +32,6 @@ html,body{
 .h4{
   font-size: 20px
 }
-.h4{
-  font-size: 18px
-}
 .h5{
   font-size: 16px;
 }
@@ -93,6 +90,9 @@ header{
         border-radius: 10px;
         color: white;
       } 
+      .body-height-title,.body-weight-title{
+        font-size: 18px
+      }
       .body-height{
         margin-bottom: 20px;
       }

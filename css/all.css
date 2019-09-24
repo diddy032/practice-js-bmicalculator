@@ -28,10 +28,6 @@ html, body {
   font-size: 20px;
 }
 
-.h4 {
-  font-size: 18px;
-}
-
 .h5 {
   font-size: 16px;
 }
@@ -114,6 +110,10 @@ header .header-frame form input[type=text] {
   padding: 5px 10px;
   border-radius: 10px;
   color: white;
+}
+
+header .header-frame form .body-height-title, header .header-frame form .body-weight-title {
+  font-size: 18px;
 }
 
 header .header-frame form .body-height {
