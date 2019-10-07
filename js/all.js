@@ -7,7 +7,6 @@ var listData = JSON.parse(localStorage.getItem('BMI List Data')) || [];
 //監聽
 ButtonCheck.addEventListener('click', savelist, false);
 BMIShow.addEventListener('click', inputclean, false);
-BMIList.addEventListener('click', deletelist, false);
 
 
 updata(listData);
@@ -18,7 +17,7 @@ function updata(listData) {
   var len = listData.length;
   var liststr = '';
   for (var i = 0; i < len; i++) {
-    liststr += '<li class="bmi-data" data-num"' + i + '" style="border-color:' + listData[i].Color + '"> <div class="bmidata-category h4">' + listData[i].Category + '</div> <div class="bmidata-warp"> <div class="bmidata-result"> <div class="h6 bmidatm-m">BMI</div> <div class="h4">' + listData[i].BMI + '</div> </div> <div class="bmidata-weight"> <div class="h6 bmidatm-m">weight</div> <div class="h4"> ' + listData[i].Weight + 'kg</div> </div> <div class="bmidata-height"> <div class="h6 bmidatm-m">height</div> <div class="h4">' + listData[i].Height + '</div> </div> </div> <div class="bmidata-date"> <div class="h6 bmidatm-m">' + listData[i].Data + '</div> </div> </li>';
+    liststr += '<li class="bmi-data" data-num"' + i + '" style="border-color:' + listData[i].Color + '"> <div class="bmidata-category h4">' + listData[i].Category + '</div> <div class="bmidata-warp"> <div class="bmidata-result"> <div class="h6 bmidatm-m">BMI</div> <div class="h4">' + listData[i].BMI + '</div> </div> <div class="bmidata-weight"> <div class="h6 bmidatm-m">weight</div> <div class="h4"> ' + listData[i].Weight + 'kg</div> </div> <div class="bmidata-height"> <div class="h6 bmidatm-m">height</div> <div class="h4">' + listData[i].Height + '</div> </div> </div> <div class="bmidata-date"> <div class="h6 bmidatm-m">' + listData[i].Date + '</div> </div> </li>';
   }
   BMIList.innerHTML = liststr;
 }
@@ -65,7 +64,7 @@ function savelist() {
 
   //取得當下日期
   var fullDate = new Date();
-  var NowData = (fullDate.getMonth() + 1) >= 10 ? (fullDate.getMonth() + 1) : ("0" + (fullDate.getMonth() + 1)) + '-' + fullDate.getDate() + '-' + fullDate.getFullYear();
+  var NowDate = (fullDate.getMonth() + 1) + '-' + fullDate.getDate() + '-' + fullDate.getFullYear();
 
   //存入陣列中
   listData.push({
@@ -73,7 +72,7 @@ function savelist() {
     Weight: WeightStr,
     BMI: BMIStr,
     Category: CategoryStr,
-    Data: NowData,
+    Date: NowDate,
     Color: ColorStr,
   });
 
@@ -97,12 +96,6 @@ function savelist() {
   updata(listData);
 }
 
-//刪除list
-function deletelist(e) {
-  var num = e.target.dataset.num;
-  console.log(e.target.dataset);
-  console.log(e.target.nodeName);
-}
 
 
 //清除 input值，顯示button-check
