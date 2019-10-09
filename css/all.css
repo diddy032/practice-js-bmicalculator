@@ -24,7 +24,7 @@ html, body {
   font-size: 24px;
 }
 
-.h4 {
+.h4, .listarea .delete-icon {
   font-size: 20px;
 }
 
@@ -297,7 +297,7 @@ header .header-frame .disappear {
           justify-content: space-between;
 }
 
-.listarea .bmidata-warp, .listarea .bmidata-category, .listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height, .listarea .bmidata-date {
+.listarea .bmidata-warp, .listarea .bmidata-category, .listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height, .listarea .bmidata-date, .listarea .delete-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,6 +322,17 @@ header .header-frame .disappear {
 
 .listarea .bmidata-date {
   margin: 0 10px;
+}
+
+.listarea .delete-icon {
+  color: #424242;
+  cursor: pointer;
+  margin-left: -20px;
+  margin-right: -35px;
+}
+
+.listarea .delete-icon i {
+  padding: 0 5px;
 }
 
 .listarea .bmidatm-m {
@@ -349,7 +360,7 @@ header .header-frame .disappear {
   .listarea .bmi-data .bmidata-warp {
     width: 100%;
   }
-  .listarea .bmidata-warp, .listarea .bmidata-category, .listarea .bmidata-date {
+  .listarea .bmidata-warp, .listarea .bmidata-category, .listarea .bmidata-date, .listarea .delete-icon {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -358,13 +369,18 @@ header .header-frame .disappear {
   .listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height {
     margin: 0 10px;
   }
+  .listarea .delete-icon {
+    font-size: 24px;
+    padding-right: 0;
+    padding-top: 5px;
+  }
 }
 
 @media (max-width: 576px) {
   .listarea .bmi-data {
     width: 250px;
   }
-  .listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height {
+  .listarea .bmidata-result, .listarea .bmidata-weight, .listarea .bmidata-height, .listarea .delete-icon {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
